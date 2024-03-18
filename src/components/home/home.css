@@ -1,0 +1,53 @@
+#home {
+    margin: 0;
+    padding: 6rem 8rem;
+    width: 100%; /* Alterado para 100% */
+    height: 100vh;
+    background-image: url('../../assets/background-home.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+}
+
+.container {
+    width: 50%;
+    max-width: 90%; /* Alterado para percentual */
+    padding-top: 8%;
+    text-align: left; 
+    
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    color: #2d2d4a;
+    font-size: 5vw; /* Alterado para viewport width */
+}
+
+.container p {
+    margin: 0;
+    color: #111111;
+    font-size: 1.8vw; /* Alterado para viewport width */
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 6rem 1rem;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .container h1 {
+        font-size: 12vw; /* Alterado para viewport width em telas menores */
+    }
+
+    .container p {
+        font-size: 6vw; /* Alterado para viewport width em telas menores */
+    }
+}

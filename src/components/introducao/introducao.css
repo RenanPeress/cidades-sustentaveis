@@ -1,0 +1,63 @@
+#introducao {
+    margin: 0;
+    width: 100%; /* Alterado para 100% */
+    height: 100vh;
+    background-color: #9bf194;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex; 
+}
+
+.container__left, .container__right {
+    flex: 1; /* Faz com que cada div ocupe 50% da largura do container */
+    width: 50%; /* Define explicitamente a largura, caso necessário */
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    height: 32rem;
+    margin: 10rem 8rem;
+}
+
+.content h2 {
+    color: #2d2d4a;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin: 0;
+    color: #111111;
+    font-size: 1.8vw; /* Alterado para viewport width */
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    color: #2d2d4a;
+    font-size: 5vw; /* Alterado para viewport width */
+}
+
+.container p {
+    margin: 0;
+    color: #111111;
+    font-size: 1.8vw; /* Alterado para viewport width */
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    #introducao {
+        flex-direction: column;
+    }
+
+    .container__left, .container__right {
+        flex: 1; /* Faz com que cada div ocupe 50% da largura do container */
+        width: 90%; /* Define explicitamente a largura, caso necessário */
+    }
+}

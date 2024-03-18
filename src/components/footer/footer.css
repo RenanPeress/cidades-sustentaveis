@@ -1,0 +1,17 @@
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2d2d4a;
+}
+
+span {
+    color: #fff;
+}
+
+#logo {
+    width: 6.25rem;
+    height: auto;
+}
